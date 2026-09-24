@@ -1,9 +1,6 @@
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    margin: 0;
+* {
+    margin: 10px;
+    margin-top: 10px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -594,7 +591,9 @@ nav button:hover {
     justify-content: space-around;
     align-items: center;
     padding: 30px;
-    margin-bottom: 0;
+    margin-bottom: -50px;
+    margin-left: -30px;
+    margin-right: -30px;
 }
 
 .about-button-ft {
