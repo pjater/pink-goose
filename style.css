@@ -4,133 +4,62 @@
 }
 
 body {
+    margin: 0;
     overflow-x: hidden;
-    opacity: 0;
     background-color: #0A1117;
     font-family: "Montserrat", Arial;
-    animation: fadeIn 2s forwards;
 }
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+
+header {
+    padding-top: 24px;
 }
 
 .page-margins {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+    display: block;
     padding: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
 }
 
-.h1-name {
+.logo {
     color: white;
-    margin-right: 200px;
     font-size: 40px;
     text-decoration: none;
     font-weight: bold;
 }
 
-.h1-name:hover {
+.logo:hover {
     cursor: pointer;
 }
 
 .nav-links {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     background-color: #0A1117;
-    padding: 10px;
-    margin-top: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-buttons-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .nav-buttons {
-    margin-right: 200px;
-}
-
-.home-button {
     border: none;
     background-color: transparent;
     color: white;
-    padding: 12px;
+    padding: 20px;
     font-weight: bold;
     border-radius: 10px;
     transition: transform 0.25s ease, background-color 0.25s ease;
-    margin-right: 10px;
     font-size: 20px;
     text-decoration: none;
     display: inline-block;
 }
 
-.home-button:hover {
+.nav-buttons:hover {
     background-color: #3f4a55;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.learn-button {
-    border: none;
-    background-color: transparent;
-    color: white;
-    padding: 12px;
-    font-weight: bold;
-    border-radius: 10px;
-    transition: transform 0.25s ease, background-color 0.25s ease;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 20px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.learn-button:hover {
-    background-color: #3f4a55;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.about-button {
-    border: none;
-    background-color: transparent;
-    color: white;
-    padding: 12px;
-    font-weight: bold;
-    border-radius: 10px;
-    transition: transform 0.25s ease, background-color 0.25s ease;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 20px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.about-button:hover {
-    background-color: #3f4a55;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.contact-button {
-    border: none;
-    background-color: transparent;
-    color: white;
-    padding: 12px;
-    font-weight: bold;
-    border-radius: 10px;
-    transition: transform 0.25s ease, background-color 0.25s ease;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 20px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.contact-button:hover {
-    background-color: #3f4a55;
-    cursor: pointer;
     transform: scale(1.1);
 }
 
@@ -138,17 +67,18 @@ body {
     border: none;
     background-color: #243241;
     color: white;
-    padding: 8px;
-    border-radius: 10px;
-    width: 100px;
-    height: 50px;
-    margin-left: 100px;
+    padding: 12px;
+    border-radius: 12px;
+    width: 92px;
+    height: 44px;
     filter: drop-shadow(0px 0px 25px #ffffff48);
     transition: transform 0.25s ease, background-color 0.25s ease, drop-shadow 0.25s ease;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     display: grid;
     place-items: center;
+    margin: 10px;
+    margin-left: 92px;
 }
 
 .login-button:hover {
@@ -164,7 +94,7 @@ body {
     justify-content: center;
     font-family: "Lato", Arial;
     max-width: 600px;
-    font-size: 70px;
+    font-size: 74px;
     margin: 0 auto;
     margin-top: 100px;
     color: white;
@@ -180,7 +110,7 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 30px;
+    font-size: 26px;
     max-width: 700px;
     margin: 0 auto;
     margin-top: 30px;
@@ -194,14 +124,14 @@ body {
     background-color: #CEAAFF;
     padding: 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 16px;
     font-size: 20px;
     width: 200px;
     font-weight: bold;
     filter: drop-shadow(0px 1px 15px #ffd50062);
     transition: transform 0.25s ease, drop-shadow 0.25s ease, background-color 0.25s ease;
     text-decoration: none;
-    color: #4a1879;
+    color: #10151A;
 }
 
 .get-started-button:hover {
@@ -228,7 +158,7 @@ body {
     justify-content: center;
     font-weight: bold;
     margin-top: 0px;
-    font-size: 50px;
+    font-size: 54px;
 }
 
 .DAO-labels-container {
@@ -239,6 +169,7 @@ body {
     margin: 80px auto;
     max-width: 800px;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
 .labels {
@@ -324,8 +255,6 @@ body {
     margin: 80px auto;
     border-radius: 35px;
     max-width: 60%;
-    position: relative;
-    z-index: 1;
 }
 
 .projects {
@@ -349,7 +278,6 @@ body {
     margin: auto;
     max-width: 360px;
     position: relative;
-    z-index: 2;
     margin-top: -105px;
     transition: background-color 0.2s ease;
 }
@@ -358,29 +286,13 @@ body {
     background-color: #fed2e4;
 }
 
-.backlight-superdoa {
-    position:sticky;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 1500px;
-    height: 1500px;
-    margin-top: -1000px;
-    background: radial-gradient(
-        circle,
-        #5d6cb821 0%,
-        #4949b500 50%
-    );
-    z-index: -1;
-}
-
 .the-journey {
-    margin-top: -300px;
+    margin-top: 250px;
     font-family: "Lato", Arial;
     font-weight: bold;
     font-size: 300%;
     text-align: center;
+    font-size: 54px;
 }
 
 .sentences {
@@ -388,7 +300,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin: 50px;
+    margin: 25px;
     color: #37424D;
     transition: color 0.1s ease;
 }
@@ -405,48 +317,29 @@ body {
     color: #FFB4D3;
 }
 
+.works-with-sec {
+    margin-bottom: 200px;
+}
+
 .works-with {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 250px;
+    margin-top: 200px;
     color: white;
     font-family: "Lato", Arial;
-    font-size: 50px;
-}
-
-.backlight-blocks {
-    position:sticky;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 1500px;
-    height: 1500px;
-    margin-top: -550px;
-    background: radial-gradient(
-        circle,
-        #5d6cb821 0%,
-        #4949b500 50%
-    );
-    z-index: -1;
+    font-size: 54px;
 }
 
 .blocks {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
-    margin-top: -950px;
     color: white;
     flex-wrap: wrap;
     gap: 20px;
     text-align: center;
-}
-
-.block-item {
-    /* text-align: center; */
 }
 
 .block {
@@ -472,7 +365,227 @@ body {
     color: white;
 }
 
+.team-sec {
+    margin-bottom: 200px;
+}
+
+.help-at-every-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 54px;
+    font-family: "Lato", Arial;
+}
+
+.team-members {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    transition: transform 0.2s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.1);
+}
+
+.team-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 40px;
+    font-family: "Lato", Arial;
+    color: white;
+    font-weight: bold;
+    max-width: 850px;
+    flex-wrap: wrap;
+    gap: 28px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.news-form-div {
+    padding: 30px;
+    color: white;
+    border: 2px solid #2A3744;
+    border-radius: 30px;
+    flex-direction: column;
+    display: flex;
+    justify-self: center;
+    margin-left: 10px;
+    margin-bottom: 200px;
+    background-color: #121E28;
+    max-width: 1140px;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.text-align-class {
+    text-align: center;
+}
+
+.news-form-h2 {
+    color: white;
+    font-size: 54px;
+    font-family: "Lato", Arial;
+}
+
+.Latest-news-h3 {
+    font-size: 36px;
+    color: #9AAFC3;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.email-sub-box {
+    color: white;
+    background-color: #10151A;
+    border: 2px solid #2A3744;
+    padding: 25px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 506px;
+    justify-self: left;
+    font-size: 16px;
+}
+
+.sub-button {
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #CEAAFF;
+    max-width: 175px;
+    width: 100%;
+    height: auto;
+    color: #10151A;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    transition: backround-color 0.2s ease, transform 0.2s ease;
+}
+
+.sub-button:hover {
+    background-color: #dec7ff;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.press-sec {
+    margin-bottom: 200px;
+}
+
+.pos-h2-and-h3 {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    max-width: 1323px;
+    margin: 0 auto 24px;
+}
+
+.h2-press {
+    color: white;
+    font-size: 54px;
+    font-family: "Lato", Arial;
+}
+
+.see-all {
+    color: #8395A7;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.see-all:hover { 
+    transform: scale(1.1); 
+}
+
+.divs-container-press-sec {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    max-width: 1323px;
+    margin: 0 auto;
+}
+
+.press-divs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 361px;
+    min-height: 382px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.decrypt {
+    background-color: #77E6FF;
+}
+
+.blockworks { 
+    background-color: #E2C1F9; 
+}
+
+.techcrunch { 
+    background-color: #DBE268; 
+}
+
+.press-divs-h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.press-divs-h3-decrypt {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.press-divs-h3-blockworks {
+    margin-top: 27px;
+    margin-bottom: 10px;
+}
+
+.press-divs-h3-techcrunch {
+    margin-top: 26px;
+    margin-bottom: 10px;
+}
+
+.press-divs-p {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 550;
+    color: #10151A;
+}
+
+.press-divs-read {
+    color: #10151A;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+    transition: transform 0.2s ease;
+    padding: 6px;
+}
+
+.press-divs-read:hover { 
+    transform: scale(1.1); 
+}
+
 .footer-box {
+    display: flex;
     background-color: #121E28;
     height: 200px;
     display: flex;
